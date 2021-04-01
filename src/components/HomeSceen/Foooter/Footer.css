@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f2f2f2;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.current-location {
+  border-bottom: 1px solid #dadce0;
+}
+.current-location p {
+  color: #70757a;
+}
+
+.footer-down-right ul {
+  list-style: none;
+}
+.footer-down-right ul li {
+  display: inline;
+}
+.footer-down-right ul li a {
+  text-decoration: none;
+  color: #70757a !important;
+}
+
+.footer-down-right ul .footer-item {
+  padding-left: 30px;
+}
+
+  

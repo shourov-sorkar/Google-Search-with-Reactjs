@@ -14,6 +14,7 @@ const Home = () => {
             <img
               src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
               className="mx-auto my-3"
+              alt="google logo"
             />
             <div className="formDiv col-md-6 my-3 mx-auto d-flex align-items-center justify-content-between">
               <IconButton>
