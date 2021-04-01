@@ -1,6 +1,7 @@
 .search-box{
     width: 100%;
 }
+
 .search-box-input{
     box-shadow: none !important;
     outline: none !important;
@@ -16,6 +17,13 @@
     border: 1px solid #9aa0a6;
     border-radius: 32px;
 }
+.formDiv:hover{
+    -webkit-box-shadow: 1px 0px 17px -4px rgba(0,0,0,0.66);
+    -moz-box-shadow: 1px 0px 17px -4px rgba(0,0,0,0.66);
+    box-shadow: 1px 0px 17px -4px rgba(0,0,0,0.66);
+    border: none !important;
+}
+
 
 .search-button{
     box-shadow: none !important;
