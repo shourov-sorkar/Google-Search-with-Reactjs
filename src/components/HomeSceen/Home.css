@@ -1,0 +1,24 @@
+.search-box{
+    width: 100%;
+}
+.search-box-input{
+    box-shadow: none !important;
+    outline: none !important;
+}
+.search-box-input:focus{
+    box-shadow: 0 !important;
+    outline: none !important;
+}
+.close-icon{
+    color: #9aa0a6;
+}
+.formDiv{
+    border: 1px solid #9aa0a6;
+    border-radius: 32px;
+}
+
+.search-button{
+    box-shadow: none !important;
+    background:#F8F9FA;
+    padding: 5px 10px;
+}
