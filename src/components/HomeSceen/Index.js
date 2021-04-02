@@ -7,7 +7,7 @@ function Index() {
     <div>
       <NavBar />
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

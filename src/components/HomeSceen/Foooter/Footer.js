@@ -23,13 +23,38 @@ const Footer = () => {
         </p>
       </div>
       <div className="row">
-        <div className="footer-down-right ml-5">
-          <ul className="w-100">
-            <li className="footer-item-start" ><a href="/">About</a></li>       
-            <li className="footer-item"><a href="/">Advertising</a></li>       
-            <li className="footer-item"><a href="/">Business</a></li>         
-            <li className="footer-item"><a href="/">How Search works</a></li>                      
-          </ul>
+        <div className="col sm-6 md-6 lg-6">
+          <div className="footer-down-right ml-5">
+            <ul className="w-100">
+              <li className="footer-item-start">
+                <a href="/">About</a>
+              </li>
+              <li className="footer-item">
+                <a href="/">Advertising</a>
+              </li>
+              <li className="footer-item">
+                <a href="/">Business</a>
+              </li>
+              <li className="footer-item">
+                <a href="/">How Search works</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="col sm-6 md-6 lg-6">
+          <div className="footer-down-right ">
+            <ul className="w-100">
+              <li className="footer-item">
+                <a href="/">Privacy</a>
+              </li>
+              <li className="footer-item">
+                <a href="/">Terms</a>
+              </li>
+              <li className="footer-item">
+                <a href="/">Settings</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

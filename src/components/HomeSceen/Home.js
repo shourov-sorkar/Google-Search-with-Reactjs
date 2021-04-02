@@ -51,6 +51,11 @@ const Home = () => {
                 I'm Feeling Lucky
               </button>
             </div>
+            <div className="mx-auto text-center mt-4">
+              <span className="google-language">
+                Google offered in: <a href="/">বাংলা</a>{" "}
+              </span>
+            </div>
           </div>
         </div>
       </div>
