@@ -2,11 +2,11 @@ import React from "react";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import Footer from "./Foooter/Footer";
-function Index() {
+const  Index = ( {setSearch} ) => {
   return (
     <div>
       <NavBar />
-      <Home />
+      <Home setSearch={setSearch}/>
       {/* <Footer /> */}
     </div>
   );

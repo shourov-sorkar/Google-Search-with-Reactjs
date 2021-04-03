@@ -12,6 +12,7 @@
 }
 .close-icon {
   color: #9aa0a6;
+  cursor: pointer;
 }
 .formDiv {
   border: 1px solid #9aa0a6;
