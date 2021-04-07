@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   const [userData, setUserData] = useState({});
   useEffect(() => {
-    fetch("https://extreme-ip-lookup.com/json/")
+    fetch("http://ip-api.com/json/")
       .then((res) => res.json())
       .then((response) => {
         setUserData(response);

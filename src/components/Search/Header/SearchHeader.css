@@ -1,0 +1,18 @@
+.search-box-input {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.search-box-input:focus {
+  box-shadow: 0 !important;
+  outline: none !important;
+}
+.formdiv2 {
+  border: 1px solid #9aa0a6;
+  border-radius: 37px;
+}
+.formdiv2:hover {
+  -webkit-box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.66);
+  box-shadow: 1px 0px 17px -4px rgba(0, 0, 0, 0.66);
+  border: none !important;
+}
