@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import Header from "./Header/Header"
+import Header from "./Header/Header";
+import SearchData from "./searchData/SearchData";
 const SearchScreen = ({ searchTerm, googleData }) => {
   const history = useHistory();
   console.log(googleData);
@@ -15,9 +16,7 @@ const SearchScreen = ({ searchTerm, googleData }) => {
     <Header searchTerm={searchTerm}/>
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            <h1>Welcome to the Search Page : {searchTerm}</h1>
-          </div>
+          <SearchData googleData={googleData}/>
         </div>
       </div>
     </>

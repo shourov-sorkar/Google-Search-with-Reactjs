@@ -12,7 +12,7 @@ import SearchScreen from "./components/Search/SearchScreen";
 import {searchData} from "./api/googleSearch"
 const App = () => {
   const history = useHistory();
-  const [searchTerm, setSearchTerm] = useState('This is test');
+  const [searchTerm, setSearchTerm] = useState('');
   const [googleData, setGoogleData] = useState({});
   const setSearch = async (term) =>{
     setSearchTerm(term);
