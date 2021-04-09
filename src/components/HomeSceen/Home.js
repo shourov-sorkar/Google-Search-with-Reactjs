@@ -5,7 +5,7 @@ import MicIcon from "@material-ui/icons/Mic";
 import { IconButton } from "@material-ui/core";
 import logo from "../Assets/logo.png";
 import "./Home.css";
-const Home = ({setSearch}) => {
+const Home = ({ setSearch,openVoiceSearch }) => {
   const [input, setInput] = useState("");
 
   const handleSubmit = (e) => {
@@ -55,7 +55,7 @@ const clearInput = () => {
                   <CloseIcon className="close-icon" />
                 </IconButton>
               ) : null}
-              <IconButton>
+              <IconButton onClick={() => openVoiceSearch()}>
                 <MicIcon />
               </IconButton>
             </div>
@@ -76,7 +76,7 @@ const clearInput = () => {
             </div>
             <div className="mx-auto text-center mt-4">
               <span className="google-language">
-                Google offered in: <a href="/">বাংলা</a>{" "}
+                The BitCode offered in: <a href="/">বাংলা</a>{" "}
               </span>
             </div>
           </div>

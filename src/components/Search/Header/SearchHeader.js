@@ -8,19 +8,42 @@ import MicIcon from "@material-ui/icons/Mic";
 import { IconButton } from "@material-ui/core";
 import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar } from "@material-ui/core";
-const SearchHeader = ({ searchTerm }) => {
+const SearchHeader = ({ searchTerm, setSearch, openVoiceSearch}) => {
   const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     setSearchText(searchTerm);
   }, [searchTerm]);
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+      /^[a-zA-Z0-9].*/.test(searchText) ||
+      /^[a-zA-Z0-9]+[" "]/.test(searchText)
+    ) {
+      setSearch(searchText);   
+    }
+  };
+  const handleButton = () => {
+    if (                                                                                                                                                                                                                
+      /^[a-zA-Z0-9].*/.test(searchText) ||
+      /^[a-zA-Z0-9]+[" "]/.test(searchText)
+    ) {
+      setSearch(searchText);   
+    }
+  };
+const clearInput = () => {
+  setSearchText('');
+}
+
   return (
     <div className="col-md-12 py-3 d-flex align-items-center">
       <Link to={"/"} className="ml-5">
         <img src={logo} alt="logo" height="35" />
       </Link>
       <div className="col-md-6 d-flex align-items-center border ml-3 justify-content-between formdiv2">
-        <form style={{ width: "100%" }}>
+        <form style={{ width: "100%" }} onSubmit={handleSubmit}>
           <input
             type="text"
             value={searchText}
@@ -29,14 +52,14 @@ const SearchHeader = ({ searchTerm }) => {
           />
         </form>
         {searchText ? (
-          <IconButton>
+          <IconButton onClick={clearInput}>
             <CloseIcon />
           </IconButton>
         ) : null}
-        <IconButton>
+        <IconButton onClick={() => openVoiceSearch()}>
           <MicIcon />
         </IconButton>
-        <IconButton>
+        <IconButton onClick={handleButton}>
           <SearchIcon />
         </IconButton>
       </div>
